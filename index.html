@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fenicia - Centro de Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>La Fenicia</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><button onclick="scrollToSection('inicio')" class="nav-link">Inicio</button></li>
+                <li><button onclick="scrollToSection('tratamientos')" class="nav-link">Tratamientos</button></li>
+                <li><button onclick="scrollToSection('contacto')" class="nav-link">Contacto</button></li>
+            </ul>
+            <!-- agregando botón de modo oscuro -->
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+
+   <!-- Hero Section -->
+    <section id="inicio" class="hero hero-divider">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Belleza y Bienestar en La Fenicia</h1>
+                <p class="hero-description">
+                    Descubre nuestros tratamientos de estética avanzada diseñados para realzar tu belleza natural. 
+                    Profesionales certificados y tecnología de vanguardia te esperan.
+                </p>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('tratamientos')" class="btn-primary">Ver Tratamientos</button>
+                    <button onclick="scrollToSection('contacto')" class="btn-secondary">Contactar</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.postimg.cc/jSdcHC6j/image.png" alt="Centro de estética La Fenicia" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="tratamientos" class="treatments section-divider light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Tratamientos</h2>
+                <p class="section-description">
+                    Ofrecemos una amplia gama de tratamientos personalizados para cada tipo de piel y necesidad
+                </p>
+            </div>
+            
+            <div class="treatments-grid">
+                <!-- Treatment 1 -->
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="https://i.postimg.cc/SN0NYMhW/image.png" alt="Limpieza Facial Profunda" />
+                    </div>
+                    <div class="treatment-content">
+                        <h3 class="treatment-title">Limpieza Facial Profunda</h3>
+                        <p class="treatment-description">
+                            Tratamiento completo que incluye exfoliación, extracción de impurezas y hidratación profunda. 
+                            Ideal para todo tipo de piel, dejándola suave, luminosa y renovada.
+                        </p>
+                        <div class="treatment-features">
+                            <span class="feature">• Exfoliación suave</span>
+                            <span class="feature">• Extracción de comedones</span>
+                            <span class="feature">• Mascarilla hidratante</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment 2 -->
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="https://i.postimg.cc/Dzz23QrK/image.png" alt="Tratamiento Anti-edad" />
+                    </div>
+                    <div class="treatment-content">
+                        <h3 class="treatment-title">Tratamiento Anti-edad</h3>
+                        <p class="treatment-description">
+                            Combate los signos del envejecimiento con tecnología avanzada. Estimula la producción de colágeno 
+                            y reduce líneas de expresión para una piel más joven y firme.
+                        </p>
+                        <div class="treatment-features">
+                            <span class="feature">• Radiofrecuencia</span>
+                            <span class="feature">• Estimulación de colágeno</span>
+                            <span class="feature">• Reducción de arrugas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment 3 -->
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="https://i.postimg.cc/Qt9hHXY4/image.png" alt="Hidratación Intensiva" />
+                    </div>
+                    <div class="treatment-content">
+                        <h3 class="treatment-title">Hidratación Intensiva</h3>
+                        <p class="treatment-description">
+                            Restaura la barrera natural de la piel con ácido hialurónico y vitaminas esenciales. 
+                            Perfecto para pieles secas o deshidratadas que necesitan nutrición profunda.
+                        </p>
+                        <div class="treatment-features">
+                            <span class="feature">• Ácido hialurónico</span>
+                            <span class="feature">• Vitaminas A, C, E</span>
+                            <span class="feature">• Hidratación 24h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment 4 -->
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="https://i.postimg.cc/sD9yBHKr/image.png" alt="Tratamiento para Acné" />
+                    </div>
+                    <div class="treatment-content">
+                        <h3 class="treatment-title">Tratamiento para Acné</h3>
+                        <p class="treatment-description">
+                            Protocolo especializado para pieles con tendencia acneica. Controla la producción de sebo, 
+                            reduce inflamación y previene futuras erupciones.
+                        </p>
+                        <div class="treatment-features">
+                            <span class="feature">• Control de sebo</span>
+                            <span class="feature">• Ácido salicílico</span>
+                            <span class="feature">• Terapia LED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment 5 -->
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="https://i.postimg.cc/Hn1Dnbyn/image.png" alt="Masaje Relajante" />
+                    </div>
+                    <div class="treatment-content">
+                        <h3 class="treatment-title">Masaje Relajante</h3>
+                        <p class="treatment-description">
+                            Libera tensiones y estrés con nuestro masaje terapéutico. Mejora la circulación, 
+                            alivia dolores musculares y proporciona una sensación de bienestar total.
+                        </p>
+                        <div class="treatment-features">
+                            <span class="feature">• Técnicas suecas</span>
+                            <span class="feature">• Aceites esenciales</span>
+                            <span class="feature">• Relajación profunda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment 6 -->
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="https://i.postimg.cc/63RgkTmX/image.png" alt="Mesoterapia" />
+                    </div>
+                    <div class="treatment-content">
+                        <h3 class="treatment-title">Mesoterapia</h3>
+                        <p class="treatment-description">
+                            Vuelve a tener la cabellera de un adolescente.
+                        </p>
+                        <div class="treatment-features">
+                            <span class="feature">• Microinyecciones de compuestos</span>
+                            <span class="feature">• Minimamente invasivo</span>
+                            <span class="feature">• Piel más hidratada, tonificada y joven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-description">
+                    Agenda tu cita y comienza tu transformación hoy mismo
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Dirección</h4>
+                        <p>Calle Principal 123<br>Centro de la Ciudad</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Teléfono</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>info@lafenicia.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Horarios</h4>
+                        <p>Lun - Vie: 9:00 AM - 7:00 PM<br>Sáb: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Selecciona un tratamiento</option>
+                            <option value="limpieza">Limpieza Facial Profunda</option>
+                            <option value="antiedad">Tratamiento Anti-edad</option>
+                            <option value="hidratacion">Hidratación Intensiva</option>
+                            <option value="acne">Tratamiento para Acné</option>
+                            <option value="masaje">Masaje Relajante</option>
+                            <option value="modelado">Modelado Corporal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje (opcional)" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>La Fenicia</h3>
+                    <p>Tu centro de estética de confianza</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li>Tratamientos Faciales</li>
+                        <li>Cuidado Corporal</li>
+                        <li>Masajes Terapéuticos</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+1 (555) 123-4567</p>
+                    <p>info@lafenicia.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 La Fenicia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
