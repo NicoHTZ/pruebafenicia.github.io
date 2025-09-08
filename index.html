@@ -204,18 +204,20 @@
                     </div>
                 </div>
                 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/xjkejano"
+                    method="POST">
+
                     <div class="form-group">
-                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Teléfono">
+                        <input type="tel" name="telefono" placeholder="Teléfono">
                     </div>
                     <div class="form-group">
-                        <select required>
+                        <select name="tratamiento" required>
                             <option value="">Selecciona un tratamiento</option>
                             <option value="limpieza">Limpieza Facial Profunda</option>
                             <option value="antiedad">Tratamiento Anti-edad</option>
@@ -226,8 +228,9 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Mensaje (opcional)" rows="4"></textarea>
+                        <textarea name="mensaje" placeholder="Mensaje (opcional)" rows="4"></textarea>
                     </div>
+                    <input type="text" name="_gotcha" style="display:none">
                     <button type="submit" class="btn-primary">Enviar Mensaje</button>
                 </form>
             </div>
