@@ -644,3 +644,74 @@ h4 {
 .treatment-card:hover .treatment-price {
     transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
 }
+
+/* Estilos para el bloque de Redes Sociales */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    
+    
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-color); /* Color de texto claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color); /* Color de destaque */
+}
+
+.social-icon span {
+    font-size: 1.2em;
+    width: 25px; 
+    text-align: center;
+    margin-right: 8px;
+}
+
+/* Estilos para el botón de WhatsApp destacado */
+.whatsapp-cta {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Separador sutil */
+}
+
+.btn-whatsapp {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #25D366; /* El verde de WhatsApp */
+    color: white !important;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Asegura que el enlace del logo se vea como texto normal, sin subrayado ni color de enlace */
+.logo-link h2 {
+    text-decoration: none; /* Quita el subrayado */
+    
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}

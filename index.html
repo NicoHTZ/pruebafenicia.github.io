@@ -6,13 +6,37 @@
     <title>La Fenicia - Centro de Estética</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
+<style>
+  /* Define la familia de fuente para los iconos */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em; /* Puedes ajustar el tamaño aquí */
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>La Fenicia</h2>
+                <a href="#inicio" class="logo-link" onclick="scrollToSection('inicio')"> 
+                    <h2>La Fenicia</h2>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><button onclick="scrollToSection('inicio')" class="nav-link">Inicio</button></li>
@@ -62,7 +86,7 @@
                 <!-- Treatment 1 -->
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/NjSwyM2k/Imagen-pegada.png" alt="Plasma rico en plaquetas" />
+                        <img src="https://i.postimg.cc/K8QpZN1v/image.png" alt="Plasma rico en plaquetas" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Plasma rico en plaquetas</h3>
@@ -81,7 +105,7 @@
                 <!-- Treatment 2 -->
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/BncTRt9Q/Imagen-pegada-2.png" alt="Mesoterapia capilar" />
+                        <img src="https://i.postimg.cc/MGvMn6pQ/Imagen-pegada-10.png" alt="Mesoterapia capilar" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Mesoterapia capilar masculina</h3>
@@ -106,7 +130,7 @@
                 <!-- Treatment 3 -->
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/QMCFSMjz/Imagen-pegada-3.png" alt="Mesoterapia capilar femenina" />
+                        <img src="https://i.postimg.cc/FKyRdYQm/image.png" alt="Mesoterapia capilar femenina" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Mesoterapia capilar femenina</h3>
@@ -131,7 +155,7 @@
                 <!-- Treatment 4 -->
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/dVzbNHFK/Imagen-pegada-4.png" alt="Exfoliacion corporal" />
+                        <img src="https://i.postimg.cc/dVKc74Q4/image.png" alt="Exfoliacion corporal" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Exfoliacion corporal e Hidratación profunda</h3>
@@ -155,7 +179,7 @@
                 <!-- Treatment 5 -->
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/5NyD4dNV/Imagen-pegada-5.png" alt="Anti Age con Radiofrecuencia" />
+                        <img src="https://i.postimg.cc/PrndZt2r/image.png" alt="Anti Age con Radiofrecuencia" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Anti Age con Radiofrecuencia</h3>
@@ -181,7 +205,7 @@
                 <!-- Treatment 6 -->
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/0QtZFjSJ/Imagen-pegada-6.png" alt="Exosomas" />
+                        <img src="https://i.postimg.cc/P53G6hzz/image.png" alt="Exosomas" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Exosomas</h3>
@@ -212,7 +236,7 @@
 
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/pd5q4RZ0/Imagen-pegada-7.png" alt="Limpieza Facial Profunda" />
+                        <img src="https://i.postimg.cc/1XZbgzs4/image.png" alt="Limpieza Facial Profunda" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Limpieza Facial Profunda</h3>
@@ -233,7 +257,7 @@
 
                 <div class="treatment-card">
                     <div class="treatment-image">
-                        <img src="https://i.postimg.cc/dtXCXdxY/Imagen-pegada-8.png" alt="Peeling" />
+                        <img src="https://i.postimg.cc/52kGBgb3/image.png" alt="Peeling" />
                     </div>
                     <div class="treatment-content">
                         <h3 class="treatment-title">Peeling</h3>
@@ -277,8 +301,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
+   <section id="contacto" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Contáctanos</h2>
@@ -291,11 +314,11 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h4>Dirección</h4>
-                        <p>Calle Principal 123<br>Centro de la Ciudad</p>
+                        <p>Av. Pueyrredón 1655 CABA</p>
                     </div>
                     <div class="contact-item">
                         <h4>Teléfono</h4>
-                        <p>+1 (555) 123-4567</p>
+                        <p>011 5920-7118</p>
                     </div>
                     <div class="contact-item">
                         <h4>Email</h4>
@@ -303,10 +326,27 @@
                     </div>
                     <div class="contact-item">
                         <h4>Horarios</h4>
-                        <p>Lun - Vie: 9:00 AM - 7:00 PM<br>Sáb: 9:00 AM - 5:00 PM</p>
+                        <p>Lunes - Viernes: 10:00 AM - 6:00 PM<br>Sábado: 10:00 AM - 4:00 PM</p>
+                        <p>Domingo: Cerrado</p>
+                    </div>
+
+                    <div class="contact-item whatsapp-cta">
+                        <h4>¿Preguntas? Chatea Ahora</h4>
+                        <a href="https://api.whatsapp.com/send?phone=5491159207118&text&context=Afe4szD-rXxg5e6wGsUGbgNRwHX23uCMCjyGvVkUubguOQuPFPOXnacNQ16n7wCfPKlpg992KJn4Y-bZOAoswf-nswY2NIC7SRNTXC0cd_rxbxqRVKhpOZc6m0Guhn-5IW4NDYEyZ93Cn956MWiGwseJ0A&source&app=facebook" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item social-links">
+                        <h4>Síguenos</h4>
+                        <a href="https://www.facebook.com/lafenicia.esteticaybienestar/" target="_blank" class="social-icon facebook">
+                            <span class="material-symbols-outlined">group</span> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/lafenicia.esteticaybienestar/" target="_blank" class="social-icon instagram">
+                             <span class="material-symbols-outlined">photo_camera</span> Instagram
+                        </a>
                     </div>
                 </div>
-                
                 <form class="contact-form" action="https://formspree.io/f/xjkejano" method="POST">
 
                     <div class="form-group">
@@ -321,21 +361,22 @@
                     <div class="form-group">
                         <select name="Tratamiento" required>
                             <option value="">Selecciona un tratamiento</option>
-                            <option value="Limpieza">Limpieza Facial Profunda</option>
-                            <option value="Antiedad">Tratamiento Anti-edad</option>
-                            <option value="Hidratacion">Hidratación Intensiva</option>
-                            <option value="Acne">Tratamiento para Acné</option>
-                            <option value="Masaje">Masaje Relajante</option>
-                            <option value="Modelado">Modelado Corporal</option>
+                            <option value="Plasma rico en plaquetas">Plasma rico en plaquetas</option>
+                            <option value="Mesoterapia capilar masculina">Mesoterapia capilar masculina</option>
+                            <option value="Mesoterapia capilar femenina">Mesoterapia capilar femenina</option>
+                            <option value="Exfoliacion corporal e Hidratación profunda">Exfoliacion corporal e Hidratación profunda</option>
+                            <option value="Anti Age con Radiofrecuencia">Anti Age con Radiofrecuencia</option>
+                            <option value="Limpieza Facial Profunda">Limpieza Facial Profunda</option>
+                            <option value="Peeling">Peeling</option>
+                            <option value="Pack Anticelulitis">Pack Anticelulitis</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <textarea name="Mensaje" placeholder="Mensaje (opcional)" rows="4"></textarea>
                     </div>
-                    <!-- <input type="text" name="_gotcha" style="display:none"> -->
                     <button type="submit" class="btn-primary">Enviar Mensaje</button>
                 </form>
-            </div>
+                </div>
         </div>
     </section>
 
@@ -357,12 +398,12 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>+1 (555) 123-4567</p>
+                    <p>011 5920-7118</p>
                     <p>info@lafenicia.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 La Fenicia. Todos los derechos reservados.</p>
+                <p>&copy; 2025 La Fenicia. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
